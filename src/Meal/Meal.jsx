@@ -31,7 +31,7 @@ const Meal = () => {
     setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?f=${alpha}`)
   }
   return (
-    <div className="bg-black h-full text-white flex items-center flex-col gap-5  p-2 pb-10">
+    <div className="bg-black h-full min-h-screen text-white flex items-center flex-col gap-5  p-2 pb-10">
       <div className="text-4xl font-bold">Search Your Food Recipe</div>
 
       <div>
