@@ -1,14 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import RecipeInfo from './Meal/RecipeInfo'
-import Meal from './Meal/Meal'
+import Navbar from "./components/Navbar";
+
 function App() {
   return(
-    <BrowserRouter>
+   <div className="bg-black  min-h-screen">
+     <BrowserRouter>
+    <Navbar/>
     <Routes>
-          <Route path="/" element={<Meal />} />
-          <Route path="/:MealId" element={<RecipeInfo />} />
+          
         </Routes>
     </BrowserRouter>
+   </div>
   )
 }
 
